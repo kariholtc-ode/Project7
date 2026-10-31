@@ -1,60 +1,24 @@
-# Project7
-<!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
+# ConnectHub Updated — Android Studio project
 
-# AND101 Project 7 - CYOAPI Part 3: Beautified
+## Assignment checklist
+- REQUIRED: `RecyclerView` in `activity_main.xml` and `UserAdapter.java` displays API contacts in a scrollable list.
+- REQUIRED: each item displays **name, email, phone and city** in `item_user.xml`.
+- REQUIRED: **Lato** (open-source downloadable font family) is bundled in `res/font/lato_regular.ttf` and `lato_bold.ttf` so it works offline; custom colors and text sizes are applied using `styles.xml`.
+- REQUIRED: app theme is customized in `res/values/themes.xml`.
+- REQUIRED: reusable `ConnectHub.Title`, `ConnectHub.PersonName`, `ConnectHub.Detail` styles in `res/values/styles.xml`.
+- STRETCH: night-specific theme and styles in `res/values-night/themes.xml` and `res/values-night/styles.xml`.
+- STRETCH: light/dark drawables in `res/drawable` and `res/drawable-night` for contact cards and header.
+- EXTRA: AsyncHttpClient API fetch, refresh button, loading indicator, network error message, click Toast, 4 fields per contact, DividerItemDecoration.
 
-Submitted by: **Your Name Here**
+## Open / Run
+1. Extract the ZIP completely, open the **ConnectHubUpdated** root folder (the folder containing `settings.gradle`) in Android Studio.
+2. Use JDK 17, Android SDK 35, and sync Gradle. Run the `app` module on an emulator (e.g., Pixel 8 API 35).
+3. **Gradle launcher included:** `gradlew`, `gradlew.bat`, and `gradle/wrapper/gradle-wrapper.jar` are provided. Note: the JAR is a small custom bootstrap launcher (not the official Gradle wrapper JAR), because the official binary could not be retrieved in this environment. It downloads and unpacks Gradle 8.9 on first run. Internet is required. On Windows run `gradlew.bat --version` to verify, then sync in Android Studio. If Android Studio requires the official wrapper, generate it using a local Gradle 8.9 installation with `gradle wrapper --gradle-version 8.9`.
 
-Time spent: **X** hours spent in total
+4. For dark mode, switch the emulator's **Settings → Display → Dark theme**.
 
-## Summary
+API: https://jsonplaceholder.typicode.com/users (fictional sample users). Internet required to load contacts.
 
-Connection Court is an android app that allows users to view and access contact information in one place
+Font: Lato by Łukasz Dziedzic, SIL Open Font License; see https://fonts.google.com/specimen/Lato . The TTF files are bundled as downloadable font assets, not dynamically fetched via the Google Fonts provider.
 
-If I had to describe this project in three (3) emojis, they would be: **emojis here**
-
-## Application Features
-
-<!-- (This is a comment) Please be sure to change the [ ] to [x] for any features you completed.  If a feature is not checked [x], you might miss the points for that item! -->
-
-The following REQUIRED features are completed:
-
-- [X] App contains a RecyclerView that displays a list of scrollable data
-- [X] App displays at least two (2) pieces of data for each RecyclerView item
-- [X] Use a downloadable font with custom color and size
-- [X] Modify the theme of the app in `themes.xml`
-- [X] Define and apply at least one style in **either** `themes.xml` or a new file `styles.xml`
-
-The following STRETCH features are implemented:
-
-- [X] Update the night theme to use different versions of styles when in dark mode
-- [X] Use different drawables when in dark mode
-
-The following EXTRA features are implemented:
-
-- [X] List anything else that you added to improve the app!
-
-<!-- Recommended tools:
-- [Kap](https://getkap.co/) for macOS
-- [ScreenToGif](https://www.screentogif.com/) for Windows
-- [peek](https://github.com/phw/peek) for Linux. -->
-
-## Notes
-
-Here's a place for any other notes on the app, it's creation process, or what you learned this unit!
-
-## License
-
-Copyright 2026 Kari Holt
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+This source project was not compiled or tested on an emulator in this environment.
